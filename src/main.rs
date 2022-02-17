@@ -1,7 +1,7 @@
-mod Ch01;
-use crate::Ch01::{integer, floating};
-mod Ch02;
-use crate::Ch02::slice;
+mod ch01;
+use crate::ch01::{integer, floating};
+mod ch02;
+use crate::ch02::slice;
 
 fn main() {
     let str = String::from("lol me");
