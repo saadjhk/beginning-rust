@@ -9,3 +9,13 @@ pub fn first_word(str: &String) -> usize {
 
     str.len()
 }
+
+pub fn first_word_str_slice(str_slice: &str) -> usize {
+    for (i, &item) in str_slice.as_bytes().iter().enumerate() {
+        if item == b' ' {
+            return i
+        }
+    }
+
+    str_slice.len()
+}
